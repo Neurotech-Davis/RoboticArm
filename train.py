@@ -1,5 +1,7 @@
 import cortex
 from cortex import Cortex
+import os
+from dotenv import load_dotenv
 
 class Train():
     """
@@ -268,10 +270,13 @@ class Train():
 # -----------------------------------------------------------
 
 def main():
+    # Load environment variables from .env file
+    load_dotenv()
 
     # Please fill your application clientId and clientSecret before running script
-    your_app_client_id = ''
-    your_app_client_secret = ''
+    your_app_client_id = os.environ['CLIENT_ID']
+    your_app_client_secret = os.environ['CLIENT_SECRET']
+    print(your_app_client_id)
 
     # Init Train
     t=Train(your_app_client_id, your_app_client_secret)
@@ -279,7 +284,7 @@ def main():
     profile_name = '' # set your profile name. If the profile is not exited it will be created.
 
     # list actions which you want to train
-    actions = ['neutral', 'push', 'pull']
+    actions = ['neutral', 'open', 'shut','lift', 'drop', '']
     t.start(profile_name, actions)
 
 if __name__ =='__main__':
