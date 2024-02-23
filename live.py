@@ -1,5 +1,7 @@
 import cortex
 from cortex import Cortex
+import os
+from dotenv import load_dotenv
 
 class LiveAdvance():
     """
@@ -274,10 +276,12 @@ class LiveAdvance():
 # -----------------------------------------------------------
 
 def main():
-
+    # Load environment variables from .env file
+    load_dotenv()
+    
     # Please fill your application clientId and clientSecret before running script
-    your_app_client_id = CLIENT_ID
-    your_app_client_secret = CLIENT_SECRET
+    your_app_client_id = os.environ['CLIENT_ID']
+    your_app_client_secret = os.environ['CLIENT_SECRET']
 
     # Init live advance
     l = LiveAdvance(your_app_client_id, your_app_client_secret)
