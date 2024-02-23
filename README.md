@@ -9,3 +9,5 @@ pip install python-dispatch
 https://www.emotiv.com/knowledge-base/how-do-i-train-multiple-actions/
 
 https://www.emotiv.com/knowledge-base/training-mental-commands/
+
+https://www.emotiv.com/knowledge-base/tips-on-mental-command-training/
