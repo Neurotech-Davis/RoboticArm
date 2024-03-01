@@ -281,7 +281,7 @@ def main():
     # Init Train
     t=Train(your_app_client_id, your_app_client_secret)
 
-    profile_name = '' # set your profile name. If the profile is not exited it will be created.
+    profile_name = 'pgame' # set your profile name. If the profile is not exited it will be created.
 
     # list actions which you want to train
     actions = ['neutral', 'open', 'shut','lift', 'drop', '']

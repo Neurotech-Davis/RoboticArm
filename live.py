@@ -282,11 +282,10 @@ def main():
     # Please fill your application clientId and clientSecret before running script
     your_app_client_id = os.environ['CLIENT_ID']
     your_app_client_secret = os.environ['CLIENT_SECRET']
-
     # Init live advance
     l = LiveAdvance(your_app_client_id, your_app_client_secret)
 
-    trained_profile_name = '' # Please set a trained profile name here
+    trained_profile_name = 'pgame' # Please set a trained profile name here
     l.start(trained_profile_name)
 
 if __name__ =='__main__':
