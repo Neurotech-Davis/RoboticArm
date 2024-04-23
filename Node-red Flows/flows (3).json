@@ -1,0 +1,216 @@
+[
+    {
+        "id": "eed42a866f229c0b",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5ba707c93d23a218",
+        "type": "EMOTIV",
+        "z": "eed42a866f229c0b",
+        "name": "EMOTIV",
+        "x": 760,
+        "y": 460,
+        "wires": [
+            [
+                "61d317a9ad0771ef"
+            ]
+        ]
+    },
+    {
+        "id": "61d317a9ad0771ef",
+        "type": "Profile-Name",
+        "z": "eed42a866f229c0b",
+        "name": "Profile Name",
+        "profileName": "grace",
+        "x": 980,
+        "y": 460,
+        "wires": [
+            [
+                "ee4ecc8d4a6c4f5e",
+                "49b70ef47778e7da",
+                "43cd67ead1bc2a47",
+                "a2efb0690934a791",
+                "c56cabee77ad2f1d"
+            ]
+        ]
+    },
+    {
+        "id": "ee4ecc8d4a6c4f5e",
+        "type": "Mental-Command",
+        "z": "eed42a866f229c0b",
+        "name": "Mental Commands",
+        "actionName": "lift",
+        "mcSen": 10,
+        "x": 1300,
+        "y": 460,
+        "wires": [
+            [
+                "626fedaac4886e21"
+            ]
+        ]
+    },
+    {
+        "id": "626fedaac4886e21",
+        "type": "pythonshell in",
+        "z": "eed42a866f229c0b",
+        "name": "Lift Script",
+        "pyfile": "C:\\Users\\sinha\\Documents\\neurotechstuff\\RoboticArm\\Mental_Command_Scripts\\left.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 1560,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43cd67ead1bc2a47",
+        "type": "Mental-Command",
+        "z": "eed42a866f229c0b",
+        "name": "Mental Commands",
+        "actionName": "right",
+        "mcSen": 10,
+        "x": 1310,
+        "y": 540,
+        "wires": [
+            [
+                "de6fa81bcd787aac"
+            ]
+        ]
+    },
+    {
+        "id": "de6fa81bcd787aac",
+        "type": "pythonshell in",
+        "z": "eed42a866f229c0b",
+        "name": "Right Script",
+        "pyfile": "C:\\Users\\sinha\\Documents\\neurotechstuff\\RoboticArm\\Mental_Command_Scripts\\right.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 1570,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49b70ef47778e7da",
+        "type": "Mental-Command",
+        "z": "eed42a866f229c0b",
+        "name": "Mental Commands",
+        "actionName": "neutral",
+        "mcSen": 10,
+        "x": 1320,
+        "y": 380,
+        "wires": [
+            [
+                "3f4442996bd9413b"
+            ]
+        ]
+    },
+    {
+        "id": "3f4442996bd9413b",
+        "type": "pythonshell in",
+        "z": "eed42a866f229c0b",
+        "name": "Script",
+        "pyfile": "C:\\Users\\sinha\\Documents\\neurotechstuff\\RoboticArm\\Mental_Command_Scripts\\neutral.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 1550,
+        "y": 380,
+        "wires": [
+            [
+                "9f8f1793fcd839ab"
+            ]
+        ]
+    },
+    {
+        "id": "a2efb0690934a791",
+        "type": "Mental-Command",
+        "z": "eed42a866f229c0b",
+        "name": "Mental Commands",
+        "actionName": "left",
+        "mcSen": 10,
+        "x": 1310,
+        "y": 620,
+        "wires": [
+            [
+                "398c39c4eb576929"
+            ]
+        ]
+    },
+    {
+        "id": "398c39c4eb576929",
+        "type": "pythonshell in",
+        "z": "eed42a866f229c0b",
+        "name": "Left Script",
+        "pyfile": "C:\\Users\\sinha\\Documents\\neurotechstuff\\RoboticArm\\Mental_Command_Scripts\\lift.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 1560,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f8f1793fcd839ab",
+        "type": "delay",
+        "z": "eed42a866f229c0b",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1710,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "364dc51452f98c37",
+        "type": "pythonshell in",
+        "z": "eed42a866f229c0b",
+        "name": "Drop Script",
+        "pyfile": "C:\\Users\\sinha\\Documents\\neurotechstuff\\RoboticArm\\Mental_Command_Scripts\\drop.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 1570,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c56cabee77ad2f1d",
+        "type": "Mental-Command",
+        "z": "eed42a866f229c0b",
+        "name": "Mental Commands",
+        "actionName": "drop",
+        "mcSen": 10,
+        "x": 1310,
+        "y": 700,
+        "wires": [
+            [
+                "364dc51452f98c37"
+            ]
+        ]
+    }
+]
