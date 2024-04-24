@@ -6,8 +6,8 @@ arduino = Serial(port='COM10', baudrate=9600, timeout=1)
 arduino.write('4'.encode('utf-8'))
 
 try:
-    boardData = connection.readline().decode('ascii')
+    boardData = arduino.readline().decode('ascii')
 except UnicodeDecodeError:
-    boardData = connection.readline().decode('ascii')
+    boardData = arduino.readline().decode('ascii')
 
 time.sleep(1)
