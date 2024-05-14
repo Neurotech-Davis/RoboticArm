@@ -1,7 +1,9 @@
 # Neuro-Prosthetic EEG Controlled Robotic Arm 
 ## Neurotech@Davis
 Data Collection Team: Abrianna Johnson, Avni Bafna (@AvniBafna), Deiva Dham, Grace Lim, Matangi Venkatakrishnan (@MatVenkat)
+
 Hardware Team: Adit Jain, Dhruv Sangamwar (@dhruvsangamwar), Evan Silvey (@EvanSilvey)
+
 Software Team: Ahmed Seyam (@AhmedSey03), Prakhar Sinha (@prakhargaming), Priyal Patel (@priyalpatell)
 
 ## Introduction
