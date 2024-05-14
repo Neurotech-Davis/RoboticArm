@@ -8,7 +8,9 @@ Software Team: Ahmed Seyam (@AhmedSey03), Prakhar Sinha (@prakhargaming), Priyal
 
 Our project utilizes rhythmic patterns associated with the waveforms for each mental command. This is accompanied by the mental imagery of the task, which can be explained by utilizing mirror neurons for the motor-related tasks. A baseline for these commands is computed using the recorded “neutral” state, where the subject does not imagine stimulus. All commands are recorded from the same channels shown below on our EEG headset. The user trains the commands to associate with robotic arm movements, individualizing their own mental commands.
 
-![emotiv](./pictures/emotiv.png)
+<p align="center">
+  <img src="./pictures/emotiv.png" />
+</p>
 
 ## Methods
 
@@ -26,13 +28,18 @@ Our project utilizes rhythmic patterns associated with the waveforms for each me
 ## Pipeline
 Using the built-in integration of Emotiv’s software with the Node-Red toolbox, we seek to in real-time detect 4 mental commands—lift, drop, left, and right—using a threshold in the range of 70-90; we will need to complete more fine-tuning to establish specific cutoffs for each command. The final integer output will be sent through a serial connection with the Arduino. The integer output for each command is 1 for lift, 2 for drop, 3 for left, and 4 for right.
 
-![pipeline](./pictures/pipeline.png)
+
+<p align="center">
+  <img src="./pictures/pipeline.png" />
+</p>
 
 ## Results/Conclusion
 
 We use the Elegoo UNO R3 microcontroller with the Arduino IDE to manage the hardware. Servo Motors are used for the movement of fingers and the wrist. A serial connection is established between software and hardware to relay mental commands from the Emotiv Headset to the servo motors. Fishing line is connected to the pulley system and servo motors to control tension and when the fingers should grab. The Arduino IDE uploads the necessary program to control the hardware using mental command inputs. A USB connection is made from the Elegoo Uno R3 to the computer running the Node-Red software. This establishes the software to hardware connection through the serial port connection. Upon a valid mental command, specific servo motors associated with the command will activate to represent the instruction via the 3D printed hand
 
-![arm](./pictures/arm.jpg)
+<p align="center">
+  <img src="./pictures/arm.jpg" />
+</p>
 
 ## References
 
