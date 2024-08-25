@@ -28,7 +28,7 @@ Our project utilizes rhythmic patterns associated with the waveforms for each me
 - The "drop" command was primed with a video featuring a cartoon piano falling down, eliciting fast, high-arousal responses.
 
 ## Pipeline
-Using the built-in integration of Emotiv’s software with the Node-Red toolbox, we seek to in real-time detect 4 mental commands—lift, drop, left, and right—using a threshold in the range of 70-90; we will need to complete more fine-tuning to establish specific cutoffs for each command. The final integer output will be sent through a serial connection with the Arduino. The integer output for each command is 1 for lift, 2 for drop, 3 for left, and 4 for right.
+Using the built-in integration of Emotiv’s software with the Node-Red toolbox, we seek to in real-time detect 4 mental commands—lift, drop, left, and right. We will use integer mappings to each mental command: 1 for lift, 2 for drop, 3 for left, and 4 for right. The final integer output will be sent through a serial connection with the Arduino. 
 
 
 <p align="center">
