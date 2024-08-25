@@ -40,7 +40,7 @@ Using the built-in integration of Emotiv’s software with the Node-Red toolbox,
 We use the Elegoo UNO R3 microcontroller with the Arduino IDE to manage the hardware. Servo Motors are used for the movement of fingers and the wrist. A serial connection is established between software and hardware to relay mental commands from the Emotiv Headset to the servo motors. Fishing line is connected to the pulley system and servo motors to control tension and when the fingers should grab. The Arduino IDE uploads the necessary program to control the hardware using mental command inputs. A USB connection is made from the Elegoo Uno R3 to the computer running the Node-Red software. This establishes the software to hardware connection through the serial port connection. Upon a valid mental command, specific servo motors associated with the command will activate to represent the instruction via the 3D printed hand
 
 <p align="center">
-  <img src="./pictures/arm.jpg" />
+  <img src="./pictures/node-red-flow.png" />
 </p>
 
 ## References
